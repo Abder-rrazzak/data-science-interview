@@ -1,0 +1,36 @@
+{
+  "sample_size": {
+    "n_control": 252,
+    "n_treatment": 252,
+    "n_total": 504,
+    "assumptions": "Normal approximation, independent observations, common SD, two-sided test; confirm using simulation or exact power."
+  },
+  "experiment": {
+    "difference": 0.5556854600894834,
+    "p_value": 0.004304406735952131,
+    "confidence_interval": [
+      0.1750281540227107,
+      0.936342766156256
+    ],
+    "cohens_d": 0.25653572012943976,
+    "n_treatment": 250,
+    "n_control": 250,
+    "warning": "A low p-value does not establish practical significance; causal interpretation requires valid randomization.",
+    "true_simulated_effect": 0.4,
+    "baseline_smd": 0.12318544410043494
+  },
+  "adjusted_pvalues": {
+    "holm": [
+      0.012,
+      0.12,
+      0.16,
+      0.9
+    ],
+    "fdr_bh": [
+      0.012,
+      0.08,
+      0.10666666666666667,
+      0.9
+    ]
+  }
+}

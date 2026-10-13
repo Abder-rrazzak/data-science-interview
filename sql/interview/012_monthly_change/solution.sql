@@ -1,0 +1,1 @@
+WITH monthly AS (SELECT region, DATE_TRUNC('month', timestamp) AS month, COUNT(*) AS n FROM events GROUP BY region, month), lagged AS (SELECT *, LAG(n) OVER (PARTITION BY region ORDER BY month) AS previous_n FROM monthly) SELECT region, month, n, previous_n, CASE WHEN previous_n > 0 THEN 100.0 * (n - previous_n) / previous_n ELSE NULL END AS pct_change FROM lagged;

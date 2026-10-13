@@ -1,0 +1,1 @@
+WITH daily AS (SELECT region, CAST(timestamp AS DATE) AS day, COUNT(*) AS n FROM events GROUP BY region, day), ranked AS (SELECT *, ROW_NUMBER() OVER (PARTITION BY region ORDER BY n DESC, day) AS rn FROM daily) SELECT region, day, n FROM ranked WHERE rn <= 3;

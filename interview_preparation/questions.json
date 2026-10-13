@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "topic": "python",
+    "difficulty": "beginner",
+    "question": "How would you detect duplicate IDs in a million records?",
+    "rubric": "Discuss pandas duplicated, memory, and validation."
+  },
+  {
+    "id": 2,
+    "topic": "python",
+    "difficulty": "advanced",
+    "question": "How would you optimize a slow row-wise Pandas transformation?",
+    "rubric": "Profile first, prefer vectorization, measure memory and runtime."
+  },
+  {
+    "id": 3,
+    "topic": "sql",
+    "difficulty": "intermediate",
+    "question": "How do you compute a 30-day rolling count by region?",
+    "rubric": "Explain window frames, dates versus rows, and missing dates."
+  },
+  {
+    "id": 4,
+    "topic": "sql",
+    "difficulty": "advanced",
+    "question": "How do you deduplicate multi-source reports using SQL?",
+    "rubric": "Define business keys, use ROW_NUMBER with deterministic tie-breaking."
+  },
+  {
+    "id": 5,
+    "topic": "statistics",
+    "difficulty": "beginner",
+    "question": "What does a 95% confidence interval mean?",
+    "rubric": "Explain repeated-sampling coverage, not probability the fixed parameter lies in this interval."
+  },
+  {
+    "id": 6,
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "When would you choose Welch’s t-test over Student’s t-test?",
+    "rubric": "Unequal variances; independence, assumptions, effect size and CI."
+  },
+  {
+    "id": 7,
+    "topic": "visualization",
+    "difficulty": "intermediate",
+    "question": "How do you show uncertainty to executives?",
+    "rubric": "Use intervals, baseline comparisons, denominators and caveats."
+  },
+  {
+    "id": 8,
+    "topic": "visualization",
+    "difficulty": "advanced",
+    "question": "How would you critique a dual-axis chart?",
+    "rubric": "Discuss misleading scale and alternatives."
+  },
+  {
+    "id": 9,
+    "topic": "leadership",
+    "difficulty": "intermediate",
+    "question": "How do you prioritize an urgent ad-hoc request?",
+    "rubric": "Clarify impact, urgency, cost, stakeholder alignment, tradeoffs."
+  },
+  {
+    "id": 10,
+    "topic": "leadership",
+    "difficulty": "senior",
+    "question": "How do you review a junior analyst’s significant result?",
+    "rubric": "Check design, leakage, multiplicity, assumptions, reproducibility."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "intermediate",
+    "question": "What does a p-value measure?",
+    "rubric": "Probability of data at least this extreme assuming the null and test assumptions; not P(null true)."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "intermediate",
+    "question": "Why use Welch t-test for two groups?",
+    "rubric": "Independent means with possibly unequal variances; check independence and distribution/sample size."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "intermediate",
+    "question": "When is a paired t-test preferable?",
+    "rubric": "When before/after measurements are matched; analyze within-pair differences."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "intermediate",
+    "question": "Explain bootstrap confidence intervals.",
+    "rubric": "Resample observations with replacement; percentile CI estimates sampling uncertainty assuming appropriate resampling design."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "What does a permutation test require?",
+    "rubric": "Exchangeability of group labels under the null; randomize labels and compare the test statistic."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "Confidence interval versus prediction interval?",
+    "rubric": "Parameter uncertainty versus future observation uncertainty; prediction intervals generally wider."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "Why is statistical significance not operational significance?",
+    "rubric": "Tiny effects can be statistically significant at large n; report effect size, interval, consequences."
+  },
+  {
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "How do you distinguish correlation from causation?",
+    "rubric": "Association alone is not causal; consider confounding, design, randomization, and identification assumptions."
+  },
+  {
+    "id": "exp_design_01",
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "How do you design a randomized experiment for a new analytical workflow?",
+    "rubric": "Define primary outcome, unit, randomization, MDE, sample size, power, monitoring, pre-specified analysis."
+  },
+  {
+    "id": "exp_design_02",
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "How would you estimate sample size for a two-arm comparison?",
+    "rubric": "Specify effect, SD, alpha, power, allocation; show normal approximation and limits."
+  },
+  {
+    "id": "exp_design_03",
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "How do you detect and mitigate confounding?",
+    "rubric": "Distinguish randomized and observational designs; check covariate balance and unmeasured confounding."
+  },
+  {
+    "id": "exp_design_04",
+    "topic": "statistics",
+    "difficulty": "advanced",
+    "question": "When do you use Welch t-test?",
+    "rubric": "Independent groups with potentially unequal variances; report CI, effect size, and assumptions."
+  },
+  {
+    "id": "exp_design_05",
+    "topic": "statistics",
+    "difficulty": "senior",
+    "question": "What is the difference between Bonferroni, Holm and BH?",
+    "rubric": "FWER vs FDR; adjustment and interpretation; dependency assumptions."
+  },
+  {
+    "id": "exp_design_06",
+    "topic": "statistics",
+    "difficulty": "senior",
+    "question": "What if an A/B test is statistically significant but operationally negligible?",
+    "rubric": "Compare CI to pre-defined decision threshold, cost, harms and uncertainty."
+  },
+  {
+    "id": "exp_design_07",
+    "topic": "statistics",
+    "difficulty": "senior",
+    "question": "How do you handle early stopping or repeated peeking?",
+    "rubric": "Pre-specify duration or use valid sequential methods; repeated naive tests inflate type-I error."
+  },
+  {
+    "id": "exp_design_08",
+    "topic": "statistics",
+    "difficulty": "senior",
+    "question": "How do you evaluate experiment validity?",
+    "rubric": "Review assignment integrity, missingness, attrition, contamination, interference and analysis plan."
+  }
+]

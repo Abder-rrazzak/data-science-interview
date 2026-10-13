@@ -1,0 +1,1 @@
+WITH numbered AS (SELECT *, ROW_NUMBER() OVER (PARTITION BY source_id, CAST(timestamp AS DATE) ORDER BY timestamp, event_id) AS rn FROM events) SELECT event_id, source_id, timestamp FROM numbered WHERE rn = 1;

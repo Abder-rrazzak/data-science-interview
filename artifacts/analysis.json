@@ -1,0 +1,12 @@
+{
+  "region_a": "North",
+  "region_b": "South",
+  "n_a": 253,
+  "n_b": 238,
+  "mean_difference": -7.394498937124261,
+  "p_value": 2.8152055413645597e-18,
+  "ci95_lower": -8.994214838597783,
+  "ci95_upper": -5.79478303565074,
+  "method": "Welch two-sample t-test; descriptive synthetic example",
+  "anomalies_detected": 50
+}

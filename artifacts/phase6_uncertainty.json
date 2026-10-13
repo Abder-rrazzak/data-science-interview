@@ -1,0 +1,80 @@
+{
+  "data_notice": "Synthetic examples only; not real operational or security data.",
+  "bootstrap": {
+    "estimate": 10.163922589736124,
+    "lower": 9.853400003975286,
+    "upper": 10.487691962198166,
+    "confidence": 0.95,
+    "method": "iid percentile bootstrap"
+  },
+  "linear_intervals": {
+    "predicted": [
+      6.239975093104349,
+      12.048468109393383
+    ],
+    "mean_ci_lower": [
+      5.834209249739403,
+      11.642702266028436
+    ],
+    "mean_ci_upper": [
+      6.645740936469296,
+      12.45423395275833
+    ],
+    "prediction_lower": [
+      2.5540200214778306,
+      8.362513037766863
+    ],
+    "prediction_upper": [
+      9.925930164730868,
+      15.734423181019903
+    ],
+    "residual_std": 1.8500247970958463,
+    "confidence": 0.95
+  },
+  "bayesian_rate": {
+    "posterior_mean": 0.28846153846153844,
+    "credible_lower": 0.20589999866269304,
+    "credible_upper": 0.37872813231697067,
+    "posterior_alpha": 30.0,
+    "posterior_beta": 74.0,
+    "credibility": 0.95
+  },
+  "monte_carlo": {
+    "mean": 11.997478167852242,
+    "std": 2.000305612631137,
+    "p05": 8.730520628712686,
+    "p50": 11.983584727001798,
+    "p95": 15.287370977437513,
+    "analytical_mean": 12.0,
+    "analytical_std": 2.007984063681781,
+    "draws": 20000
+  },
+  "sensitivity": {
+    "baseline": 400.0,
+    "parameters": [
+      {
+        "parameter": "cost",
+        "low_output": 300.0,
+        "high_output": 500.0,
+        "swing": 200.0
+      },
+      {
+        "parameter": "volume",
+        "low_output": 320.0,
+        "high_output": 480.0,
+        "swing": 160.0
+      }
+    ],
+    "warning": "One-at-a-time ignores interactions and parameter dependence."
+  },
+  "decisions": {
+    "A": {
+      "expected_payoff": 7.25,
+      "lower_tail_payoff": -30.0
+    },
+    "B": {
+      "expected_payoff": 8.75,
+      "lower_tail_payoff": -5.0
+    }
+  }
+}
